@@ -1,0 +1,30 @@
+<%= form_for(@user_exercise) do |f| %>
+  <% if @user_exercise.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_exercise.errors.count, "error") %> prohibited this user_exercise from being saved:</h2>
+
+      <ul>
+      <% @user_exercise.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br>
+    <%= f.hidden_field :day, :validate => true %>
+    <div id="datepicker"></div> 
+  </div>
+  <div class="field">
+    <%= f.label :exercise_id %><br>
+    <div class="styled-select"><%= collection_select(:user_exercise, :exercise_id, @exercises, :id, :description, {:prompt => true, :selected => @selected_exercise} ) %></div>
+  </div>
+  <div class="field">
+    <%= f.label :total %><br>
+    <%= f.text_field :total, :size => 4, :validate => true %>
+  </div>
+  <div class="actions">
+    <%= button_to "Save", { :action => "new" }, :method => :post, :class => 'button' %> 
+  </div>
+<% end %>

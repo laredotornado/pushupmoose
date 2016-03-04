@@ -1,0 +1,12 @@
+development:
+  GOOGLE_CLIENT_ID: 545025268318-o5ejue1pgtsjoid0f0k8r7lcksfse6hk.apps.googleusercontent.com
+  GOOGLE_SECRET: 16ckoTU_RbRKkdxv7_wkNzw5
+  FACEBOOK_KEY: "1563284667329742" 
+  FACEBOOK_SECRET: 690e7faeb05199e5392892d397b79f8e
+production:
+  GOOGLE_CLIENT_ID: 545025268318-o5ejue1pgtsjoid0f0k8r7lcksfse6hk.apps.googleusercontent.com
+  GOOGLE_SECRET: 16ckoTU_RbRKkdxv7_wkNzw5
+  FACEBOOK_KEY: "1563284667329742" 
+  FACEBOOK_SECRET: 690e7faeb05199e5392892d397b79f8e
+
+

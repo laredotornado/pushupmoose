@@ -1,0 +1,29 @@
+body {
+	font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	width:	100%;
+	margin-right:	5px;
+	margin-left:	5px;  
+}
+
+.navContainer {
+	width:	100%;
+}
+
+#navBar {
+	width:	100%; 
+}
+
+#leftNavSection {
+        display: inline-block;
+}
+
+#rightNavSection {
+        display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+
+

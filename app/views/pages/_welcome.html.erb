@@ -1,0 +1,13 @@
+<table id="loginArea" cellspacing="5" align="center">
+	<tr>
+		<td><img src="/assets/moose.jpg"></td>
+		<td>
+			<table id="loginOptions" cellpadding="5">
+				<tr><td align="center" id="instructions">Login using one of the following:</td></tr>
+				<tr><td id="google"><%= link_to image_tag("google_logo.png", :border => 0, :alt => 'Google'), '/auth/google' %></td></tr>
+				<tr><td id="facebook"><%= link_to image_tag("facebook_logo.png", :border => 0, :alt => 'Facebook'), '/auth/facebook' %></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+

@@ -1,0 +1,9 @@
+<%= javascript_include_tag 'jquery.cookie' %>
+<%= stylesheet_link_tag "home" %>
+
+<div id="container">
+	<div id="left"><%= render 'form' %></div>
+	<div id="right"><%= render 'totals' %></div>
+</div>
+
+<%= link_to 'Back', user_exercises_path %>
